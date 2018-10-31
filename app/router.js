@@ -7,7 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('slow');
+  this.route('slow', function() {
+    this.route('slower', {path: ':slower_id'});
+  });
   this.route('slow-loading');
 });
 
