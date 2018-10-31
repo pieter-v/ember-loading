@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('slow');
+  this.route('slow-loading');
 });
 
 export default Router;
